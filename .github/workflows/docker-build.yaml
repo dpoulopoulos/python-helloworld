@@ -26,7 +26,7 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: python-helloworld:latest
+          tags: dpoulopoulos/python-helloworld:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
 
