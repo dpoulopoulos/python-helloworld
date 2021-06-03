@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+ {{ .Values.cm.key }}:{{ .Values.cm.value }}
+kind: ConfigMap
+metadata:
+  name: nginx-version
+  namespace: demo

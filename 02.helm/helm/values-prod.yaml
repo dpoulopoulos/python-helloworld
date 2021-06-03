@@ -1,0 +1,20 @@
+namespace:
+  name: prod
+
+replicas:
+  count: 2
+
+image:
+  name: nginx 
+  tag: 1.18.0
+  policy: IfNotPresent
+  memory: 256Mi
+  cpu: 70m
+
+svc:
+  port: 80
+  type: ClusterIp
+
+cm:
+  key: version
+  value: 1.17.0

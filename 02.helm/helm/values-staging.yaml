@@ -1,0 +1,20 @@
+namespace:
+  name: staging
+
+replicas:
+  count: 1
+
+image:
+  name: nginx 
+  tag: 1.18.0
+  policy: IfNotPresent
+  memory: 128Mi
+  cpu: 50m
+
+svc:
+  port: 8111
+  type: ClusterIp
+
+cm:
+  key: version
+  value: 1.18.0
