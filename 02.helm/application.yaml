@@ -1,4 +1,4 @@
-piVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: 'nginx-deployment'
@@ -11,5 +11,7 @@ spec:
     helm:
       valueFiles:
       - values.yaml
-      path: helm/
+    path: 02.helm/helm
+    repoURL: https://github.com/dpoulopoulos/python-helloworld
+    targetRevision: HEAD
   project: 'default'

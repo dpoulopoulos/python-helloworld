@@ -27,6 +27,7 @@ spec:
       - image: {{ .Values.image.name }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.policy }}
         name: nginx-alpine
-        requests:
-          memory: {{ .Values.image.memory }}
-          cpu: {{ .Values.image.cpu }}
+        resources:
+          requests:
+            memory: {{ .Values.image.memory }}
+            cpu: {{ .Values.image.cpu }}

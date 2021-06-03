@@ -16,5 +16,4 @@ svc:
   type: ClusterIp
 
 cm:
-  key: version
-  value: alpine
+  data: "version: alpine"
