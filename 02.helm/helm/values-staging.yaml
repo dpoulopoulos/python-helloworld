@@ -13,7 +13,7 @@ image:
 
 svc:
   port: 8111
-  type: ClusterIp
+  type: ClusterIP
 
 cm:
   data: "version: 1.18.0"

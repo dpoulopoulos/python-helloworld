@@ -13,7 +13,7 @@ image:
 
 svc:
   port: 80
-  type: ClusterIp
+  type: ClusterIP
 
 cm:
   data: "version: 1.17.0"
